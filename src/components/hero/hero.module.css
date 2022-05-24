@@ -1,0 +1,351 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  padding: 120px 16px 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  flex: 1 1 0%;
+  z-index: 1;
+}
+.inner {
+  position: relative;
+  max-width: 480px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px,
+    rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+  border-radius: 24px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+.header {
+  padding: 1rem 1.25rem 0.5rem;
+  /* width: 100%; */
+  color: rgb(86, 90, 105);
+}
+.headerWrapper {
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.leftInner {
+  margin-right: 8px;
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.right {
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  width: fit-content;
+}
+.rightInner {
+  margin-left: 0.5rem;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  border: none;
+  text-align: left;
+}
+.rightInner button {
+  position: relative;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 0.5rem;
+  height: 20px;
+}
+.body {
+  position: relative;
+  padding: 8px;
+}
+.bodyWrapper {
+  display: grid;
+  grid-auto-rows: auto;
+  row-gap: 8px;
+}
+.currencyInput {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  border-radius: 20px;
+  background-color: rgb(237, 238, 242);
+  z-index: 1;
+  width: initial;
+  transition: height 1s ease 0s;
+  will-change: height;
+}
+.currencyInputInner {
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(247, 248, 250);
+  width: initial;
+}
+.currencyInputInner:hover {
+  border: 1px solid rgb(206, 208, 217);
+}
+.currencyInputInnerWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.currencyInputInnerWrapper input {
+  filter: none;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out 0s;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  width: 0px;
+  position: relative;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  background-color: rgb(247, 248, 250);
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+  appearance: textfield;
+}
+.currencyInputInnerWrapper button {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(237, 238, 242);
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 16px;
+  outline: none;
+  user-select: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  height: 2.4rem;
+  width: initial;
+  padding: 0px 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: 12px;
+  visibility: visible;
+}
+.currencyInputInnerWrapper button span {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.spanWrap {
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+.spanWrap img {
+  margin-right: 0.5rem;
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(
+    white 50%,
+    rgba(255, 255, 255, 0) calc(75% + 1px),
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 50%;
+  box-shadow: white 0px 0px 1px;
+  border: 0px solid rgba(255, 255, 255, 0);
+}
+.spanWrap p {
+  margin: 0px 0.25rem;
+  font-size: 18px;
+}
+.svgs {
+  margin: 0px 0.25rem 0px 0.35rem;
+  height: 35%;
+}
+.arrowWrapper {
+  padding: 4px;
+  border-radius: 12px;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  margin-top: -14px;
+  margin-bottom: -14px;
+  left: calc(50% - 16px);
+  background-color: rgb(247, 248, 250);
+  border: 4px solid rgb(255, 255, 255);
+  z-index: 2;
+  box-sizing: border-box;
+}
+.arrowWrapper:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+/* currencyOutput */
+.currencyOutput {
+  display: flex;
+  flex-flow: column nowrap;
+  position: relative;
+  border-radius: 20px;
+  background-color: rgb(237, 238, 242);
+  z-index: 1;
+  width: initial;
+  transition: height 1s ease 0s;
+  will-change: height;
+}
+.currencyOutputInner {
+  border-radius: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(247, 248, 250);
+  width: initial;
+}
+.currencyOutputInner:hover {
+  border: 1px solid rgb(206, 208, 217);
+}
+.currencyOutputInnerWrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.currencyOutputInnerWrapper input {
+  filter: none;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out 0s;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  width: 0px;
+  position: relative;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  flex: 1 1 auto;
+  background-color: rgb(247, 248, 250);
+  font-size: 28px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px;
+  appearance: textfield;
+}
+.currencyOutputInnerWrapper button {
+  -webkit-box-align: center;
+  align-items: center;
+  /* background-color: rgb(232, 0, 111); */
+  background-color: #ff9c25;
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 16px;
+  outline: none;
+  user-select: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 500;
+  height: 2.4rem;
+  width: initial;
+  padding: 0px 8px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-left: 12px;
+  visibility: visible;
+}
+.output {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+.outputContents {
+  width: fit-content;
+  display: flex;
+  padding: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+}
+.outputContents span {
+  margin: 0px 0.25rem;
+  font-size: 18px;
+}
+.connectButton > button {
+  box-sizing: border-box;
+  /* background-color: rgb(253, 234, 241); */
+  background-color: #f7d98f;
+  /* color: rgb(213, 0, 102); */
+  color: #ff9c25;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 16px;
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid transparent;
+  /* color: rgb(0, 0, 0); */
+  text-decoration: none;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  will-change: transform;
+  transition: transform 450ms ease 0s;
+  transform: perspective(1px) translateZ(0px);
+}
+.connectButton > button:hover {
+  /* background-color: rgb(252, 220, 232); */
+  background-color: #fae0a2;
+}
+
+.connectButton > button p {
+  padding: 0;
+  margin: 0;
+}

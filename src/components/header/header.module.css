@@ -1,0 +1,92 @@
+.header {
+  height: 72px;
+  /* width: 100%; */
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo img {
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.network {
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 16px;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  display: flex;
+  font-weight: 500;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 6px 8px;
+}
+.networkIcon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+}
+.networkTitle {
+  margin-right: 8px;
+}
+.connectWallet {
+  margin-left: 0.5em;
+}
+.connectWalletInner {
+  display: flex;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  white-space: nowrap;
+  width: 100%;
+  height: 40px;
+}
+.connectWalletInner button {
+  font-weight: 500;
+  background-color: rgb(253, 234, 241);
+  border: 1px solid rgb(253, 234, 241);
+  color: rgb(213, 0, 102);
+  /* color: #fea99e; */
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 14px;
+  cursor: pointer;
+  user-select: none;
+  height: 36px;
+  margin-right: 2px;
+  margin-left: 1px;
+}
+.connectWalletInner button:hover {
+  border: 1px solid rgb(241, 201, 218);
+}
+.connectWalletInner button p {
+  flex: 1 1 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0px 0.5rem 0px 0.25rem;
+  font-size: 1rem;
+  width: fit-content;
+  font-weight: 500;
+}
