@@ -11,8 +11,8 @@ export const TYPES = {
 };
 // state of the application
 export const initialState = {
-  acceptedChainId: "0x13881", // Polygon Mumbai network Id
-  // acceptedChainId: "0x89", // Polygon mainnet
+  // acceptedChainId: "0x13881", // Polygon Mumbai network Id
+  acceptedChainId: "0x89", // Polygon mainnet
 
   connectedChainId: null,
   isCorrectChain: false,

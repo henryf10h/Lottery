@@ -83,7 +83,7 @@ const Hero = () => {
           <div className={styles.header}>
             <div className={styles.headerWrapper}>
               <div className={styles.left}>
-                <div className={styles.leftInner}>Pote:</div>
+                <div className={styles.leftInner}>LOTERIA</div>
               </div>
               <div className={styles.right}>
                 <div className={styles.rightInner}>
